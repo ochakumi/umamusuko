@@ -1,2 +1,2 @@
 # ochakumi.github.io
-We are Meiwanchu.
+We are Meiwanchu, consist of current students and graduated students. 
