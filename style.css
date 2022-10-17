@@ -6,9 +6,10 @@ body, html {
     font-family: 'Noto Serif JP';
 }
 
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/img/hero-image.jpg");
-    height: 50%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +27,7 @@ body, html {
 
 .hero-text h1 {
     font-weight: 300;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .hero-text button {
@@ -47,5 +48,13 @@ body, html {
 
 .details h1 {
     text-align: center;
-    font-weight: 200;
+    font-weight: 10;
+    margin-top: 100px;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.details p {
+    text-align: center;
+    font-size: 30px;
 }
