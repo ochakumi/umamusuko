@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<title>ウマ息子 プリティーダービー</title>
-<link rel="icon" href="./assets/img/umamusuko_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>ウマ息子 プリティーダービー</title>
+  <link rel="icon" href="./assets/img/umamusuko_logo_without_char.png">
 </head>
+
 <body>
 
-<script src="anime.min.js"></script>
+  <script src="anime.min.js"></script>
 
-<div class="hero-image">
-  <div class="hero-text">
-    
-    <h1>絶対は、ワイや
-      <div class="block0"></div>
-    </h1>
+  <div class="hero-image">
+    <div class="hero-text">
+
+      <h1>絶対は、ワイや
+        <div class="block0"></div>
+      </h1>
+    </div>
   </div>
-</div>
 
-<script>
+  <script>
 
-function sleep (time) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
+    function sleep(time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    }
 
-// Usage!
-sleep(1000).then(() => {
-    // Do something after the sleep!
-  anime({
-    targets: '.block0',
-    translateX: 2003,
-    delay: anime.stagger(100), // increase delay by 100ms for each elements.
-    duration: 1500,
-    easing: 'spring(1, 80, 100, 0)'
-});
-});
-
+    // Usage!
+    sleep(1000).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.block0',
+        translateX: 2003,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 1500,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
 
 
 
-</script>
 
-<div class="container">
+  </script>
+
+  <div class="container">
     <div class="details">
-        <h1>明和寮 模擬店「ウマ息子」</h1>
-        <p>明和寮主催のハチャメチャレース大会が今年も開幕。
+      <h1>明和寮 模擬店「ウマ息子」</h1>
+      <p>明和寮主催のハチャメチャレース大会が今年も開幕。
         <br />笑いあり、涙あり、高専生の青春をかけた
-        <br />レースのコスモを君は感じたことがあるか––––。</p>
+        <br />レースのコスモを君は感じたことがあるか––––。
+      </p>
     </div>
     <div class="race-schedule">
-        <h1>日程</h1>
-        <p>1レース目：10月22日（土）11：30〜</p>
-        <p>2レース目：10月22日（土）14：00〜</p>
-        <p>3レース目：10月23日（日）11：00〜</p>
+      <h1>日程</h1>
+      <p>1レース目：10月22日（土）11：30〜</p>
+      <p>2レース目：10月22日（土）14：00〜</p>
+      <p>3レース目：10月23日（日）11：00〜</p>
     </div>
-</div>
+  </div>
 
 </body>
+
 </html>
