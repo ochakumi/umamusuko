@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Noto Serif JP';
+    font-family: serif;
+
 
     animation-name:fadeInBody;
     animation-duration:1s;
@@ -41,8 +43,24 @@ body, html {
 }
 
 .hero-text h1 {
+    font-family: 'Noto Serif JP';
     font-weight: 300;
     font-size: 70px;
+
+    animation-name:fadeInHero-text;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes fadeInHero-text{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .hero-text button {
@@ -63,15 +81,16 @@ body, html {
 
 .container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png");
-    background-size: 80%;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: 50% -10%;
     padding-top: 100px;
 }
 
 .details h1 {
+    font-family: Roboto;
     text-align: center;
-    font-weight: 10;
+    font-weight: 1000;
     font-size: 50px;
     letter-spacing: 5px;
 }
@@ -84,8 +103,9 @@ body, html {
 }
 
 .race-schedule h1{
+    font-family: Roboto;
     text-align: center;
-    font-weight: 10;
+    font-weight: 1000;
     font-size: 50px;
     letter-spacing: 5px;
 }
