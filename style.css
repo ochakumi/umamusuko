@@ -48,7 +48,7 @@ body, html {
     font-size: 70px;
 
     animation-name:fadeInHero-text;
-    animation-duration:5s;
+    animation-duration:3s;
     animation-fill-mode:forwards;
     opacity:0;
 }
@@ -85,7 +85,6 @@ body, html {
 
     width: 500px;
     height: 5px;
-    gap: 100px;
     right: 2000px;
 }
 
@@ -95,6 +94,12 @@ body, html {
     background-repeat: no-repeat;
     background-position: 50% -10%;
     padding-top: 100px;
+
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* FF3.6+ */
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* Opera 11.10+ */
+    background: -ms-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* IE10+ */
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* W3C */
 }
 
 .details h1 {
