@@ -122,8 +122,8 @@ body, html {
     background: -ms-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* IE10+ */
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* W3C */
 
-    background-size: 70%;
-    background-position: 50% -10%;
+    background-size: 40%;
+    background-position: 50% -100%;
     padding-top: 100px;
     background-repeat: no-repeat;
 }
@@ -156,4 +156,28 @@ body, html {
     text-align: center;
     font-size: 30px;
     margin-bottom: -20px;
+}
+
+.images h1 {
+    margin-top: 100px;
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+.slider {
+    padding: 0;
 }
