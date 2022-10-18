@@ -90,16 +90,18 @@ body, html {
 
 .container {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: 50% -10%;
-    padding-top: 100px;
+    
 
     background: -moz-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* FF3.6+ */
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* Opera 11.10+ */
     background: -ms-linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* IE10+ */
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)), url("./assets/img/umamusuko_logo.png"); /* W3C */
+
+    background-size: 70%;
+    background-position: 50% -10%;
+    padding-top: 100px;
+    background-repeat: no-repeat;
 }
 
 .details h1 {
