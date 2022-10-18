@@ -11,6 +11,8 @@ body, html {
     animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
+
+    overflow-x: hidden;
 }
 
 @keyframes fadeInBody{
@@ -48,7 +50,7 @@ body, html {
     font-size: 70px;
 
     animation-name:fadeInHero-text;
-    animation-duration:3s;
+    animation-duration:2.5s;
     animation-fill-mode:forwards;
     opacity:0;
 }
@@ -61,6 +63,28 @@ body, html {
     to {
         opacity: 1;
     }
+}
+
+
+.bar0 {
+    background-color: rgb(126, 255, 255);
+    height: 33.33%;
+    width: 100%;
+    z-index: 1;
+}
+
+.bar1 {
+    background-color: pink;
+    height: 33.33%;
+    width: 100%;
+    z-index: 1;
+}
+
+.bar2 {
+    background-color: rgb(255, 255, 155);
+    height: 33.33%;
+    width: 100%;
+    z-index: 1;
 }
 
 .hero-text button {
