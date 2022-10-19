@@ -17,7 +17,6 @@
 
   <div class="hero-image section">
     <div class="hero-text">
-
       <h1>絶対は、ワイや
         <div class="block0"></div>
       </h1>
@@ -39,7 +38,7 @@
       // Do something after the sleep!
       anime({
         targets: '.block0',
-        translateX: 2003,
+        translateX: 2005,
         delay: anime.stagger(100), // increase delay by 100ms for each elements.
         duration: 1500,
         easing: 'spring(1, 80, 100, 0)'
@@ -79,13 +78,23 @@
       });
     });
 
+    sleep(2600).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.hero-text h1',
+        translateY: -300,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 3000,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
+
   </script>
 
   <div class="container section">
     <div class="details">
-      <h1>「ウマ息子」
-        <div class="shadowbox"></div>
-      </h1>
+      <h1>「ウマ息子」</h1>
+      <img src="./assets/img/umamusuko_logo_without_char.png">
       <p>明和寮主催のハチャメチャレース大会が今年も開幕。
         <br />笑いあり、涙あり、高専生の青春をかけた
         <br />レースのコスモを君は感じたことがあるか––––。
@@ -96,16 +105,19 @@
       <p>1レース目：10月22日（土）11：30〜</p>
       <p>2レース目：10月22日（土）14：00〜</p>
       <p>3レース目：10月23日（日）11：00〜</p>
+      <p><br>券売所：中庭</p>
+      <p>レース会場：グラウンド</p>
     </div>
   </div>
 
   <div class="images section">
     <h1>昨年度の様子</h1>
     <ul class="slider">
-      <li><img src="./assets/img/last_year1.png" alt=""></li>
-      <li><img src="./assets/img/last_year2.png" alt=""></li>
-      <li><img src="./assets/img/last_year3.png" alt=""></li>
-      <li><img src="./assets/img/last_year4.png" alt=""></li>
+      <li><img src="./assets/img/last_year_1.png" alt=""></li>
+      <li><img src="./assets/img/last_year_2.png" alt=""></li>
+      <li><img src="./assets/img/last_year_3.png" alt=""></li>
+      <li><img src="./assets/img/last_year_4.png" alt=""></li>
+      <li><img src="./assets/img/last_year_5.png" alt=""></li>
       <!--/slider--></ul>
   </div>
 

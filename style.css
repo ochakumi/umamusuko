@@ -29,7 +29,7 @@ body, html {
 
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/img/hero-image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("./assets/img/hero-image.png");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,6 +130,17 @@ body, html {
     background-repeat: no-repeat;
     
 } */
+
+.details {
+    text-align: center;
+}
+
+.details img {
+    width: 10%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 25px;
+}
 
 .details h1 {
     font-family: Roboto;
