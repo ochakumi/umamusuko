@@ -1,6 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+
+
+/* For mobile phones: */
+p {
+    text-align: center;
+    font-size: medium;
+}
+
+.hero-text h1 {
+    font-family: 'Noto Serif JP';
+    font-weight: 300;
+    font-size: 30px;
+
+    animation-name:fadeInHero-text;
+    animation-duration:2.5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+.race-schedule h1{
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+
+    width: 70%;
+    margin: auto;
+    background-color: black;
+
+    box-shadow: 10px 10px rgb(255, 214, 221);
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.images h1 {
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+
+    width: 80%;
+    margin: auto;
+    background-color: black;
+
+    box-shadow: 10px 10px rgb(253, 253, 166);
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    p {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .hero-text h1 {
+        font-family: 'Noto Serif JP';
+        font-weight: 300;
+        font-size: 70px;
+    
+        animation-name:fadeInHero-text;
+        animation-duration:2.5s;
+        animation-fill-mode:forwards;
+        opacity:0;
+    }
+
+    .race-schedule h1{
+        width: 10%;
+    }
+
+    .images h1 {
+        width: 22%;
+    }
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -48,17 +135,6 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
-
-.hero-text h1 {
-    font-family: 'Noto Serif JP';
-    font-weight: 300;
-    font-size: 70px;
-
-    animation-name:fadeInHero-text;
-    animation-duration:2.5s;
-    animation-fill-mode:forwards;
-    opacity:0;
 }
 
 @keyframes fadeInHero-text{
@@ -142,67 +218,7 @@ body, html {
     margin-bottom: 25px;
 }
 
-.details h1 {
-    font-family: Roboto;
-    text-align: center;
-    font-weight: 1000;
-    font-size: 40px;
-    letter-spacing: 5px;
-    color: white;
 
-    width: 19%;
-    margin: auto;
-    background-color: black;
-
-    box-shadow: 10px 10px rgb(183, 255, 255);
-    
-    margin-bottom: 40px;
-}
-.details p {
-    text-align: center;
-    font-size: 30px;
-}
-
-.race-schedule h1{
-    font-family: Roboto;
-    text-align: center;
-    font-weight: 1000;
-    font-size: 40px;
-    letter-spacing: 5px;
-    color: white;
-
-    width: 10%;
-    margin: auto;
-    background-color: black;
-
-    box-shadow: 10px 10px rgb(255, 214, 221);
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.race-schedule p{
-    text-align: center;
-    font-size: 30px;
-}
-
-.images h1 {
-    font-family: Roboto;
-    text-align: center;
-    font-weight: 1000;
-    font-size: 40px;
-    letter-spacing: 5px;
-    color: white;
-
-    width: 22%;
-    margin: auto;
-    background-color: black;
-
-    box-shadow: 10px 10px rgb(253, 253, 166);
-    
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
 
 .slider img {
     width:100%;/*スライダー内の画像を横幅100%に*/
