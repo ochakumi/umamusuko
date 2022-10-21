@@ -9,10 +9,14 @@ p {
     font-size: medium;
 }
 
+.block0 {
+    visibility: hidden;
+}
+
 .hero-text h1 {
     font-family: 'Noto Serif JP';
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
 
     animation-name:fadeInHero-text;
     animation-duration:2.5s;
@@ -55,13 +59,37 @@ p {
     margin-top: 40px;
     margin-bottom: 40px;
 }
-  
-  @media only screen and (min-width: 600px) {
+
+.img_chart img {
+    width: 200px;
+    height: 200px;
+}
+
+.member h1{
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+
+    width: 250px;
+    margin: auto;
+    background-color: black;
+
+    box-shadow: 10px 10px rgb(147, 221, 255);
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+@media only screen and (min-width: 600px) {
     /* For tablets: */
     
-  }
-  
-  @media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) {
     /* For desktop: */
     p {
         text-align: center;
@@ -86,6 +114,22 @@ p {
     .images h1 {
         width: 22%;
     }
+
+    canvas {
+        width: 50px;
+        height: 50px;
+    }
+
+    .img_chart img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .member h1{
+        width: 260px;
+    }
+
   }
 
 * {
@@ -189,6 +233,7 @@ body, html {
     position: absolute;
     background-color: white;
 
+
     width: 500px;
     height: 5px;
     right: 2000px;
@@ -234,3 +279,92 @@ body, html {
 .slider {
     padding: 0;
 }
+
+.uma_status {
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+
+
+.status_card {
+    height: 280px;
+    max-height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.status_card p {
+    text-align: left;
+    align-items: center;
+}
+
+.img_chart {
+    width: 100%;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+
+.first_day .card {
+    background-color: rgb(255, 235, 238);
+}
+
+.second_day .card {
+    background-color: rgb(254, 254, 214);
+}
+
+.third_day .card {
+    background-color: rgb(205, 236, 251);
+}
+
+
+/* ---CARDS SETTING--- */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* ---------- */
+
