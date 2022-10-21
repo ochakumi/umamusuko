@@ -80,6 +80,28 @@ p {
     margin-bottom: 40px;
 }
 
+.relative h1{
+    font-family: Roboto;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: white;
+
+    width: 250px;
+    margin: auto;
+    background-color: black;
+
+    box-shadow: 10px 10px rgb(162, 162, 162);
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.relative h2 {
+    font-size: 35px;
+}
+
 
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -125,6 +147,10 @@ p {
 
     .member h1{
         width: 260px;
+    }
+
+    .relative h1 {
+        width: 250px;
     }
 
   }
@@ -318,6 +344,10 @@ body, html {
 
 .third_day .card {
     background-color: rgb(205, 236, 251);
+}
+
+.relative {
+    text-align: center;
 }
 
 
