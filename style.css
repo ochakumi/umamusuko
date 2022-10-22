@@ -396,3 +396,13 @@ body, html {
 
   /* ---------- */
 
+  /* Urakami add*/
+  .winners{
+    color: black; 
+    font-family: 'Noto Serif JP';
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    /*-webkit-text-stroke: 1px gold;*/
+    text-shadow: 1px red;
+    }
