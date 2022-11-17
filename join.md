@@ -1,3 +1,10 @@
+---
+layout: default
+title: ochakumi
+description: 
+---
+
+
 # ochakumiの参加について
 ## 参加条件
 - 明和寮生である，または明和寮生であった人
