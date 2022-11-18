@@ -1,14 +1,3 @@
-<!-- ---
-layout: default
-title: ochakumi
-description:
-github:
-  source:
-    branch: "main"
-    path: "/"
---- -->
-
-
 # ochakumiの参加について
 ## 参加条件
 - 明和寮生である，または明和寮生であった人
