@@ -1,12 +1,12 @@
----
+<!-- ---
 layout: default
 title: ochakumi
-description: 
+description:
 github:
   source:
     branch: "main"
     path: "/"
----
+--- -->
 
 
 # ochakumiの参加について
