@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"> <!--to slider-->
+  <link rel="stylesheet" href="style.css">
+  <title>ウマ息子 プリティーダービー</title>
+  <link rel="icon" href="./assets/img/uma_logo.png">
+</head>
+
+<body>
+
+  <script src="anime.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+
+  <div class="hero-image section">
+    <div class="hero-text">
+      <h1>絶対は、ワイや
+        <div class="block0"></div>
+      </h1>
+    </div>
+    <div class="bar0"></div>
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    
+  </div>
+
+  <script>
+
+    function sleep(time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    }
+
+    // Usage!
+    sleep(1000).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.block0',
+        translateX: 2005,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 1500,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
+
+    sleep(2300).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.bar0',
+        translateX: 2003,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 1500,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
+
+    sleep(2600).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.bar1',
+        translateX: 2003,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 1500,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
+
+    sleep(2900).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.bar2',
+        translateX: 2003,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 1500,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
+
+    sleep(2600).then(() => {
+      // Do something after the sleep!
+      anime({
+        targets: '.hero-text h1',
+        translateY: -250,
+        delay: anime.stagger(100), // increase delay by 100ms for each elements.
+        duration: 3000,
+        easing: 'spring(1, 80, 100, 0)'
+      });
+    });
+
+  </script>
+
+  <div class="container section">
+    <div class="details">
+      <img src="./assets/img/umamusuko_logo.png">
+      <p>明和寮主催のハチャメチャレース大会が今年も開幕。
+        <br />笑いあり、涙あり、高専生の青春をかけた
+        <br />レースのコスモを君は感じたことがあるか––––。
+      </p>
+    </div>
+    <div class="race-schedule">
+      <h1>詳細</h1>
+      <p>ウマ息子</p>
+      <p>1レース目：10月22日（土）11：30〜</p>
+      <p>2レース目：10月22日（土）14：00〜</p>
+      <p>3レース目：10月23日（日）11：00〜</p>
+      <p><br>券売所：中庭</p>
+      <p>レース会場：グラウンド</p>
+      <p><br>景品：お菓子・協賛模擬店で使える150円分クーポン</p>
+      <p><br>レース前に券売所にて投票券をお買い求め下さい。</p>
+    </div>
+  </div>
+
+  <div class="images section">
+    <h1>昨年度の様子</h1>
+    <ul class="slider">
+      <li><img src="./assets/img/last_year_1.png" alt=""></li>
+      <li><img src="./assets/img/last_year_2.png" alt=""></li>
+      <li><img src="./assets/img/last_year_3.png" alt=""></li>
+      <li><img src="./assets/img/last_year_4.png" alt=""></li>
+      <li><img src="./assets/img/last_year_5.png" alt=""></li>
+      <!--/slider--></ul>
+  </div>
+
+  <!-- <div class="uma_status section">
+    <div class="first_day member">
+      <h1>1レース目</h1>
+      <div class="status_card">
+        
+        <div class="img_chart">
+          <img id="uma" src="./assets/img/umamusuko_logo_without_char.png">
+          <canvas id="chart"></canvas>
+          </div>
+          <div class="info">
+            <h2>あああ</h2>
+            <p>説明をここに記載していきます。</p>
+        </div>
+
+      </div>
+
+      
+    </div>
+
+  </div> -->
+  <div class="runners section">
+
+  <!--
+  <div class="first_day member">
+    <h1>1レース目</h1>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/sagara.png">
+            <canvas id="f_a"></canvas>
+            </div>
+            <div class="info">
+              <h2>サガラジッコーチョー</h2>
+              <p><br>説明をここに記載していきます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/zushi.png">
+            <canvas id="f_b"></canvas>
+            </div>
+            <div class="info">
+              <h2>オビチクキンノヒゲ</h2>
+              <p>Vatar ingar en (中略) kimmp der dai Núm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/umamusuko_logo_without_char.png">
+            <canvas id="f_c"></canvas>
+            </div>
+            <div class="info">
+              <h2>ユウクンブラック</h2>
+              <p><br>ブラックって本名ですか</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/shibamoto.png">
+            <canvas id="f_d"></canvas>
+            </div>
+            <div class="info">
+              <h2>シバモトサンホワイト</h2>
+              <p><br><br>大穴はここ</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/umamusuko_logo_without_char.png">
+            <canvas id="f_e"></canvas>
+            </div>
+            <div class="info">
+              <h2>ミヤザキセーフティ</h2>
+              <p><br>俺の後ろにゴミ残さないっ...！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="second_day member">
+    <h1>2レース目</h1>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/fujino.png">
+            <canvas id="s_a"></canvas>
+            </div>
+            <div class="info">
+              <h2>トップオブGSK</h2>
+              <p>俺が1位を取らない可能性一切なーい！</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/umamusuko_logo_without_char.png">
+            <canvas id="s_b"></canvas>
+            </div>
+            <div class="info">
+              <h2>今村</h2>
+              <p><br>説明をここに記載していきます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/sou.png">
+            <canvas id="s_c"></canvas>
+            </div>
+            <div class="info">
+              <h2>マイティー・ソウラブ</h2>
+              <p><br>大和魂カミカゼテンプラ</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/umamusuko_logo_without_char.png">
+            <canvas id="s_d"></canvas>
+            </div>
+            <div class="info">
+              <h2>工藤</h2>
+              <p><br>説明をここに記載していきます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/umamusuko_logo_without_char.png">
+            <canvas id="s_e"></canvas>
+            </div>
+            <div class="info">
+              <h2>田部</h2>
+              <p><br>説明をここに記載していきます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+
+  <!-- Changing by Urakami-->
+  <div class="first_day member">
+    <h1>1レース目</h1>
+  </div>
+  <div class="winners">
+    <h1>優勝者</h1>
+    <div class="img_chart">
+      <img src="./assets/img/uma_img/irie.png">
+    </div>
+    <h1>ユウクンブラック<br></h1>
+  </div>
+
+  <div class="second_day member">
+    <h1>2レース目</h1>
+  </div>
+  <div class="winners">
+      <h1>優勝者</h1>
+      <div class="img_chart">
+        <img src="./assets/img/uma_img/fujino.png">
+      </div>
+      <h1>トップオブGSK<br></h1>
+  </div>
+
+  <div class="third_day member">
+    <h1>3レース目</h1>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/kawano.png">
+            <canvas id="t_a"></canvas>
+            </div>
+            <div class="info">
+              <h2>ハドコーインパクト</h2>
+              <p>今は亡き歯を求めて<br>熊本草原を駆け抜けるメイバ！</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/hamasaki.png">
+            <canvas id="t_b"></canvas>
+            </div>
+            <div class="info">
+              <h2>ダビデハマタツ</h2>
+              <p><br><br>がんばるます。</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/yamada.png">
+            <canvas id="t_c"></canvas>
+            </div>
+            <div class="info">
+              <h2>ヤマダホワイト</h2>
+              <p><br>青い白鳥</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/shiga.png">
+            <canvas id="t_d"></canvas>
+            </div>
+            <div class="info">
+              <h2>アストンシガチャン</h2>
+              <p><br><br>頑張ります。</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <div class="img_chart">
+            <img src="./assets/img/uma_img/hyodo.png">
+            <canvas id="t_e"></canvas>
+            </div>
+            <div class="info">
+              <h2>エンペラーオブタイガー</h2>
+              <p><br>人並みに走れるので、安心して全財産ぼくに賭けてね。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Changing by Urakami-->
+
+  </div>
+
+  <div class="relative section">
+    <h1>関連情報</h1>
+    <h2>明和喫茶</h2>
+    <p>ウマ息子券売所横にて営業中...<br>
+      コーヒーにハマってしまった寮生による<br>
+      ドリップをとくとご堪能あれ。<br>
+    </p>
+  </div>
+
+  <div class="relative section">
+    <h1>アクセス</h1>
+    <div class="img_chart2">
+      <img src="./assets/img/map.png">
+    </div>
+  </div>
+
+  
+
+  
+
+
+
+    <script src="slider.js"></script>
+    <script src="first_uma_status.js"></script>
+    <script src="second_uma_status.js"></script>
+    <script src="third_uma_status.js"></script>
+
+
+</body>
+
+</html>
