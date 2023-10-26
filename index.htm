@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウマ息子</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="d-flex flex-wrap justify-content-center py-3 mb-4">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg> -->
+            <img src="assets/img/final-logo.svg" height="80" alt="">
+            <!-- <span class="fs-4">Simple header</span> -->
+          </a>
+    
+          <ul class="nav nav-pills">
+            <!-- <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li> -->
+            <!-- <li class="nav-item"><a href="#" class="nav-link">ウマ息子について</a></li> -->
+            <li class="nav-item"><a href="#" class="nav-link">スケジュール</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">ウマ一覧</a></li>
+            <!-- <li class="nav-item"><a href="#" class="nav-link">ギャラリー</a></li> -->
+          </ul>
+        </nav>
+
+        
+
+    <section class="schedule">
+        <h2>スケジュール</h2>
+        <!-- <p>イベントの日程や時間についての情報。</p> -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">1レース目（学年レース）</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-primary">
+                                    <span class="widget-49-date-day">28</span>
+                                    <span class="widget-49-date-month">oct</span>
+                                </div>
+                                <div class="widget-49-meeting-info">
+                                    <span class="widget-49-pro-title">10時～馬券販売</span>
+                                    <span class="widget-49-pro-title">11時～レース開始</span>
+                                </div>
+                            </div>
+                            <div class="widget-49-meeting-action">
+                                <a href="#normal-race" class="btn btn-sm btn-flash-border-primary">走者一覧</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">2レース目（タンクトップ集団）</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-warning">
+                                    <span class="widget-49-date-day">28</span>
+                                    <span class="widget-49-date-month">oct</span>
+                                </div>
+                                <div class="widget-49-meeting-info">
+                                    <span class="widget-49-pro-title">12時～馬券販売</span>
+                                    <span class="widget-49-pro-title">13時10分～レース開始</span>
+                                </div>
+                            </div>
+                            <div class="widget-49-meeting-action">
+                                <a href="#tanktop-race" class="btn btn-sm btn-flash-border-warning">走者一覧</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">3レース目（部門長レース）</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-success">
+                                    <span class="widget-49-date-day">29</span>
+                                    <span class="widget-49-date-month">oct</span>
+                                </div>
+                                <div class="widget-49-meeting-info">
+                                    <span class="widget-49-pro-title">14時～馬券販売</span>
+                                    <span class="widget-49-pro-title">15時～レース開始</span>
+                                    <!-- <span class="widget-49-meeting-time">12:00 to 13.30 Hrs</span> -->
+                                </div>
+                            </div>
+                            <div class="widget-49-meeting-action">
+                                <a href="#leaders-race" class="btn btn-sm btn-flash-border-warning">走者一覧</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>※ 全てのレースが運動場で行われます</p>
+    </section>
+
+    <section class="uma">
+        <h2>ウマ一覧</h2>
+        <!-- <p>ウマ息子イベントは、参加者が馬のコスチュームを着て競走するユニークなイベントです。</p> -->
+        <!-- 学年レース -->
+        <div class="container profile-page normal-race" id="normal-race">
+            <h5 class="card-title mb-4">1レース目（学年レース）</h5>
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>田中</strong></h4>
+                                        <span class="job_post">1年生</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="tanaka-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+                
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>兵頭</strong></h4>
+                                        <span class="job_post">2年生</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="hyodo-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>プーム</strong></h4>
+                                        <span class="job_post">3年生</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="pumu-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+                
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>竹千代</strong></h4>
+                                        <span class="job_post">4年生</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="takechiyo-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>宮崎</strong></h4>
+                                        <span class="job_post">5年生</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="miyazaki-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container profile-page tanktop-race" id="tanktop-race">
+            <h5 class="card-title mb-4">2レース目（タンクトップ集団）</h5>
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>清田</strong></h4>
+                                        <span class="job_post">タンクトップマスター</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="kiyota-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+                
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>ハマタツ</strong></h4>
+                                        <span class="job_post">ダビデハマタツ</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="hamatatu-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>てる</strong></h4>
+                                        <span class="job_post">マッスルエッグ</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="teru-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+                
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>かごさん</strong></h4>
+                                        <span class="job_post">カゴノササミ</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="kago-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>荒木</strong></h4>
+                                        <span class="job_post">馬名未定</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="araki-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>谷川</strong></h4>
+                                        <span class="job_post">シルバー・タニオッツ</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="tanigawa-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container profile-page leaders-race" id="leaders-race">
+            <h5 class="card-title mb-4">3レース目（部門長レース）</h5>
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>上田</strong></h4>
+                                        <span class="job_post">馬名未定</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="ueda-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+                
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>大塚</strong></h4>
+                                        <span class="job_post">馬名未定</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="otuka-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>大森</strong></h4>
+                                        <span class="job_post">馬名未定</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="omori-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+                
+                
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>入江</strong></h4>
+                                        <span class="job_post">馬名未定</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="irie-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-7 col-md-12">
+                    <div class="card profile-header">
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-12">
+                                    <div class="profile-image float-md-right"> 
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt=""> 
+                                        <h4 class="m-t-0 m-b-0"><strong>金子</strong></h4>
+                                        <span class="job_post">馬名未定</span>
+                                        <p>意気込み</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-12">
+                                    <canvas id="kaneko-chart" height="220"></canvas>
+                                </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="gallery">
+        <h2>ギャラリー</h2>
+        <p>過去のイベントの写真。</p>
+    </section> -->
+
+    <!-- <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>お問い合わせフォームや連絡先情報。</p>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2023 ウマ息子イベント. All rights reserved.</p>
+    </footer>
+
+    </div>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.0-beta/chart.min.js"></script>
+    <script src="script.js"></script>
+    <script src="backtotop.js"></script>
+</body>
+</html>
