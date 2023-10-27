@@ -12,7 +12,7 @@ var aa = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [5, 5, 5, 5, 5],
+        data: [4, 5, 5, 1, 5],
 
         fill: true, 
 
@@ -32,7 +32,7 @@ var bb = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [3, 1, 10, 0, 10],
+        data: [4, 2, 5, 777, 1],
 
         fill: true, 
 
@@ -52,7 +52,7 @@ var cc = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [3, 1, 5, 1, 4],
+        data: [2, 1, 5, 5, 1],
 
         fill: true, 
 
@@ -72,7 +72,7 @@ var dd = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [1, 2, 3, 100, 4],
+        data: [4, 0, 2, 5, 2],
 
         fill: true, 
 
@@ -92,7 +92,7 @@ var ee = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [4, 4, 3, 2.5, 2],
+        data: [2, 3, 5, 1, 3],
 
         fill: true, 
 
@@ -107,6 +107,7 @@ var ee = {
     }
   ]
 };
+
 var chartOptions = {
   plugins: {
     title: {
