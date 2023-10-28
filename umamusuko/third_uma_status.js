@@ -1,8 +1,9 @@
-var a = document.getElementById("t_a");
-var b = document.getElementById("t_b");
-var c = document.getElementById("t_c");
-var d = document.getElementById("t_d");
-var e = document.getElementById("t_e");
+var a = document.getElementById("s_a");
+var b = document.getElementById("s_b");
+var c = document.getElementById("s_c");
+var d = document.getElementById("s_d");
+var e = document.getElementById("s_e");
+var f = document.getElementById("s_f");
 
 // A.defaults.font.family = "Lato";
 // A.defaults.font.size = 22;
@@ -12,7 +13,7 @@ var aa = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [3, 4, 2, 0, 5],
+        data: [4, 2, 5, 256, 1],
 
         fill: true, 
 
@@ -32,7 +33,7 @@ var bb = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [5, 1, 3, 3, 4],
+        data: [100, 1, 10, 0, 101],
 
         fill: true, 
 
@@ -52,7 +53,7 @@ var cc = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [3, 3, 3, 1, 1],
+        data: [3, 2, 5, 2, 3],
 
         fill: true, 
 
@@ -72,7 +73,7 @@ var dd = {
   labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
   datasets: [
     {
-        data: [2, 4, 4, 1, 4],
+        data: [3, 1, 5, 5, 1],
 
         fill: true, 
 
@@ -89,10 +90,10 @@ var dd = {
 };
 
 var ee = {
-  labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
+  labels: ["営業スピード", "営業持久力", "営業調子", "営業運勢", "営業計画性"],
   datasets: [
     {
-        data: [3, 4, 1, 100, 1],
+        data: [5, 4, 777, 1, 5],
 
         fill: true, 
 
@@ -107,6 +108,7 @@ var ee = {
     }
   ]
 };
+
 var chartOptions = {
   plugins: {
     title: {
