@@ -1,9 +1,9 @@
-var a = document.getElementById("s_a");
-var b = document.getElementById("s_b");
-var c = document.getElementById("s_c");
-var d = document.getElementById("s_d");
-var e = document.getElementById("s_e");
-var f = document.getElementById("s_f");
+var a = document.getElementById("t_a");
+var b = document.getElementById("t_b");
+var c = document.getElementById("t_c");
+var d = document.getElementById("t_d");
+var e = document.getElementById("t_e");
+var f = document.getElementById("t_f");
 
 // A.defaults.font.family = "Lato";
 // A.defaults.font.size = 22;
