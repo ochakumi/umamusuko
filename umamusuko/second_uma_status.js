@@ -3,6 +3,7 @@ var b = document.getElementById("s_b");
 var c = document.getElementById("s_c");
 var d = document.getElementById("s_d");
 var e = document.getElementById("s_e");
+var f = document.getElementById("s_f");
 
 // A.defaults.font.family = "Lato";
 // A.defaults.font.size = 22;
@@ -107,6 +108,27 @@ var ee = {
     }
   ]
 };
+
+var ff = {
+  labels: ["スピード", "持久力", "調子", "運勢", "計画性"],
+  datasets: [
+    {
+        data: [5, 4, 5, 2, 5],
+
+        fill: true, 
+
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgb(255, 99, 132)',
+        pointBackgroundColor: 'rgb(255, 99, 132)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(255, 99, 132)'
+
+        
+    }
+  ]
+};
+
 var chartOptions = {
   plugins: {
     title: {
@@ -163,6 +185,12 @@ var D = new Chart(d, {
 var E = new Chart(e, {
   type: "radar",
   data: ee,
+  options: chartOptions
+});
+
+var F = new Chart(f, {
+  type: "radar",
+  data: ff,
   options: chartOptions
 });
 
